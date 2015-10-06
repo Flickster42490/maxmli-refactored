@@ -583,6 +583,9 @@ header ul li a:hover {
 .banner{
 	color:#ea6314;
 }
-#luke{
-	color:#fff;
+.img-circle{
+	border-radius: 1%;
+	margin: -20% 43% 5% 40%;
+	height:40%;
+	width:20%;
 }
