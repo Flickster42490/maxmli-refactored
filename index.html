@@ -1,0 +1,162 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Max Li, Full Stack Software Engineer</title>  
+    
+            
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">   
+   
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/theaterjs/latest/theater.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+      var quotes = $(".quotes");
+      var quoteIndex = -1;
+      
+      function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+          .fadeIn(300)
+          .delay(2000)
+          .fadeOut(300, showNextQuote);
+      }
+      showNextQuote();
+    })();
+  </script> 
+</head>
+
+<body id="top">
+<div id="body">
+<a id="contact" style="position: absolute; bottom: 0px; left:0;"></a>
+
+  <header>
+        <span class="font_color nameTag"><a class="scroll font_color" href="#top">Max Li, Full Stack Software Engineer</a></span>
+        <ul class="navi_fade">
+            <li><a class="scroll" href="#work">Work</a></li>
+            <li><a class="scroll" href="#about">About</a></li>
+            <li><a class="scroll" href="#contact">Contact</a></li>
+        </ul>
+    </header>
+  <div class="main">
+       <h1 class="font_color wow fadeInUp banner" id="banner"></h1>
+         <div class="work_link">
+          <a class="workColor" href="#work">Work</a>
+         </div>
+         
+         <div class="customer">
+          <a class="scroll" href="#about">About</a>
+         </div>
+         
+     <div class="home_description">
+          <a class="scroll" href="#contact">Contact</a>
+         </div>
+    </div>
+       
+    <div class="teaser_container" id="work">
+        <div class="teaser_item wow fadeInUp"><a href="work/soundwipe-music-app.html" class="fadeOutLink"><img src="images/madLibs/madLibsThumb.png"></a></div>
+        <div class="teaser_item wow fadeInUp"><a href="work/sixt-radio-spots.html" class="fadeOutLink"><img src="images/madLibs/madLibsThumb.png"></a></div>
+        <div class="teaser_item wow fadeInUp"><a href="work/mercedes-print-ads.html" class="fadeOutLink"><img src="images/madLibs/madLibsThumb.png"></a></div>
+        
+        <div class="teaser_item wow fadeInUp"><a href="work/national-youth-ballet-poster.html" class="fadeOutLink"><img src="images/madLibs/madLibsThumb.png"></a></div>
+        <div class="teaser_item wow fadeInUp"><a href="work/sixt-poster-ad.html" class="fadeOutLink"><img src="images/madLibs/madLibsThumb.png"></a></div>
+        <div class="teaser_item wow fadeInUp"><img src="images/madLibs/madLibsThumb.png" title="soon"></div>
+        <br clear="all">
+    </div>
+
+    <div class="about wow fadeInUp" id="about">
+I'm a former special education teacher, inspired by the Hour of Code initiative to dive into the crazy, wonderful, always learning and changing world of software engineering. Now I'm a full stack developer with expertise in Javascript. I have a passion for developing educational tools that enhance and engage the learning experience in our classrooms. I'll bring a unique UI/UX perspective to any EdTech project. </br></br></br></br></br></br></br>
+
+  </div>
+    <br clear="all"><br><br>
+    </div>
+    <br clear="all">
+    <div class="contact_container">
+        <h2><a href="mailto:maximilianm.li@gmail.com?subject=message from maxmli.com">maximilianm.li@gmail.com</a> | <a>301.828.8974</a>  | <a href="https://www.linkedin.com/in/maxmli">linkedIn</a> | <a href="https://www.github.com/flickster42490">github</a>
+        </h2>
+    </div>
+
+  <script src="js/wow.min.js"></script>
+    
+    <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       70,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init(); 
+    </script>
+    
+    <script>
+        var tStart = 30 // Start transition 100px from top
+        , tEnd = 500   // End at 500px
+        , cStart = [30, 30, 30]
+        , cEnd = [255, 255, 255]
+        , cDiff = [cEnd[0] - cStart[0], cEnd[1] - cStart[1], cEnd[1] - cStart[0]];
+  
+      $(document).ready(function(){
+        $(document).scroll(function() {
+          var p = ($(this).scrollTop() - tStart) / (tEnd - tStart); // % of transition
+          p = Math.min(1, Math.max(0, p)); // Clamp to [0, 1]
+          var cBg = [Math.round(cStart[0] + cDiff[0] * p), Math.round(cStart[1] + cDiff[1] * p), Math.round(cStart[2] + cDiff[2] * p)];
+          $("#body").css('background-color', 'rgb(' + cBg.join(',') +')');
+        });
+      });
+      
+      
+      var tStart2 = 30 // Start transition 100px from top
+        , tEnd2 = 500   // End at 500px
+        , cStart2 = [255, 255, 255]
+        , cEnd2 = [0, 0, 0]
+        , cDiff2 = [cEnd2[0] - cStart2[0], cEnd2[1] - cStart2[1], cEnd2[1] - cStart2[0]];
+  
+        $(document).scroll(function() {
+          var p = ($(this).scrollTop() - tStart2) / (tEnd2 - tStart2); // % of transition
+          p2 = Math.min(1, Math.max(0, p)); // Clamp to [0, 1]
+          var cBg2 = [Math.round(cStart2[0] + cDiff2[0] * p2), Math.round(cStart2[1] + cDiff2[1] * p2), Math.round(cStart2[2] + cDiff2[2] * p2)];
+          $(".font_color").css('color', '#ea6314');
+        });
+
+  </script> 
+  <script>
+            // Instantiation
+            var theater = new TheaterJS();
+
+            // Describe actors
+            theater
+                .describe("banner", .8, "#banner")
+
+            // Write the scenario
+            var count = 0;
+            while(count<10){
+            theater
+                .write("banner:hi.", 1200)
+                .write("banner:こんにちは。",1200)
+                .write("banner:sup.", 1200)
+                .write("banner:你好。", 1200)
+                .write("banner:hiya.", 1200)
+                .write("banner:dag.", 1200);
+            count++
+            }
+
+            // Listen to theater's events
+            theater
+                .on("say:start, erase:start", function () {
+                    // add blinking caret
+                })
+                .on("say:end, erase:end", function () {
+                    // remove blinking caret
+                })
+                .on("*", function () {
+                    // do something
+                });
+        </script>
+</body>
+</html>
