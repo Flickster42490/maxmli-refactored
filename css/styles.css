@@ -71,7 +71,7 @@ body {
 	width: 100%;
 	height: 100%;
 	-webkit-font-smoothing: antialiased;
-	position:relative;
+	position:absolute;
 }
 
 #body {
@@ -585,7 +585,9 @@ header ul li a:hover {
 }
 .img-circle{
 	border-radius: 1%;
-	margin: -20% 43% 5% 40%;
+	margin-top: -15%;
+	margin-bottom: 5%;
+	margin-left: 40%;
 	height:40%;
 	max-width:100%;
 }
