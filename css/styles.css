@@ -591,3 +591,6 @@ header ul li a:hover {
 	height:40%;
 	max-width:100%;
 }
+.bold{
+	font-weight: bold;
+}
