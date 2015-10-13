@@ -594,3 +594,24 @@ header ul li a:hover {
 .bold{
 	font-weight: bold;
 }
+.title{
+	text-align:center;
+	font-size:40px;
+	color:#fff;
+	margin-top: 2%;
+}
+.subtitle{
+	font-size:35px;
+	color:#fff;
+	margin-top:8%;
+	text-align: center;
+}
+.description{
+	width:80%;
+	margin: 0 auto;
+	font-size: 27px;
+}
+.popupImages{
+	width: 80%;
+	max-height: 350px;
+}

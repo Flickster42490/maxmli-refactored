@@ -25,14 +25,6 @@
   font-size: 16px;
   line-height: 24px;
 }
-#popupAbout h1, #popupProjects h1, #popupContact h1, #popupBlog h1 {
-  text-align: left;
-  font-size: 30px;
-  letter-spacing: 1px;
-  border-bottom: 1px dotted #D3D3D3;
-  padding-bottom: 2px;
-  margin: 0;
-}
 #popupAboutClose, #popupProjectsClose, #popupContactClose, #popupBlogClose {
   right: 0;
   top: 15px;
