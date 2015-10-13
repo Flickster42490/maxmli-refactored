@@ -6,7 +6,7 @@
             
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">   
-   
+   <link href="css/popup.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
     <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
@@ -57,14 +57,30 @@
     </div>
        
     <div class="teaser_container" id="work">
-        <div class="teaser_item wow fadeInUp"><a href="work/soundwipe-music-app.html" class="fadeOutLink"><img src="images/madLibs/madLibsThumb.png"></a></div>
-        <div class="teaser_item wow fadeInUp"><a href="work/sixt-radio-spots.html" class="fadeOutLink"><img src="images/madLibs/madLibsThumb.png"></a></div>
-        <div class="teaser_item wow fadeInUp"><a href="work/mercedes-print-ads.html" class="fadeOutLink"><img src="images/madLibs/madLibsThumb.png"></a></div>
+        <div class="teaser_item wow fadeInUp" id='madLib'><img src="images/madLibs/madLibsThumb.png"></div>
+        <div class="teaser_item wow fadeInUp" id='madLib'><img src="images/madLibs/madLibsThumb.png"></div>
+        <div class="teaser_item wow fadeInUp"><img src="images/madLibs/madLibsThumb.png"></div>
+        <div class="teaser_item wow fadeInUp"><img src="images/madLibs/madLibsThumb.png"></div>
+        <div class="teaser_item wow fadeInUp"><img src="images/madLibs/madLibsThumb.png"></div>
+        <div class="teaser_item wow fadeInUp"><img src="images/madLibs/madLibsThumb.png"></div>
         
-        <div class="teaser_item wow fadeInUp"><a href="work/national-youth-ballet-poster.html" class="fadeOutLink"><img src="images/madLibs/madLibsThumb.png"></a></div>
-        <div class="teaser_item wow fadeInUp"><a href="work/sixt-poster-ad.html" class="fadeOutLink"><img src="images/madLibs/madLibsThumb.png"></a></div>
-        <div class="teaser_item wow fadeInUp"><img src="images/madLibs/madLibsThumb.png" title="soon"></div>
         <br clear="all">
+        <article id="popupAbout" class="popupAbout">
+           <div class="customScrollBox">
+             <div class="container">
+               <div class="content"> <a id="popupAboutClose"><img src="images/cross.png" width="20" alt="" /></a>
+                 <h1 class='commandments'>Hello Test</h1>
+                   <div class='commandments'>
+                   <p>1. What's up Dave. Nothing much.</p>
+                   </div>
+               </div>
+             </div>
+         <div class="dragger_container">
+           <div class="dragger"></div>
+         </div>
+         <a class="scrollUpBtn" href="#"></a> <a class="scrollDownBtn" href="#"></a> 
+         </div>
+
     </div>
 
     <div class="about wow fadeInUp" id="about">
@@ -168,5 +184,6 @@ I'm a former special education <span class=bold>teacher</span>, inspired by the 
     }
     })
   </script>
+  <script src="teaserPopUp.js"></script>
 </body>
 </html>

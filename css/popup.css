@@ -1,0 +1,59 @@
+
+#popupAbout, #popupProjects, #popupContact, #popupBlog {
+  height: 600px;
+  width: 80%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.80);
+  border: 1px solid #cecece;
+  z-index: 15;
+  padding: 20px;
+  color: #FFF;
+  -webkit-box-shadow: 0px 0px 4px #000 inset;
+  -moz-box-shadow: 0px 0px 4px #000 inset;
+  box-shadow: 0px 0px 4px #000 inset;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: -50px;
+  visibility: hidden;
+}
+#popupAbout p, #popupProjects p, #popupContact p, #popupBlog p {
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: 24px;
+}
+#popupAbout h1, #popupProjects h1, #popupContact h1, #popupBlog h1 {
+  text-align: left;
+  font-size: 30px;
+  letter-spacing: 1px;
+  border-bottom: 1px dotted #D3D3D3;
+  padding-bottom: 2px;
+  margin: 0;
+}
+#popupAboutClose, #popupProjectsClose, #popupContactClose, #popupBlogClose {
+  right: 0;
+  top: 15px;
+  position: absolute;
+  display: block;
+  opacity: 0.5;
+  -webkit-transition:all .25s linear;
+  -moz-transition:all .25s linear;
+  -o-transition:all .25s linear;
+  -ms-transition:all .25s linear;
+  transition:all .25s linear;
+}
+#popupAboutClose:hover, #popupProjectsClose:hover, #popupContactClose:hover, #popupBlogClose:hover {
+  opacity: 1;
+  -webkit-transition:all .25s linear;
+  -moz-transition:all .25s linear;
+  -o-transition:all .25s linear;
+  -ms-transition:all .25s linear;
+  transition:all .25s linear;
+}
+article{
+  left:-60px;
+}
+  
