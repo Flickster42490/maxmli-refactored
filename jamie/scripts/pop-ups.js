@@ -12,7 +12,7 @@
 					$("#popupAbout").fadeIn("slow");
 					popupAboutStatus = 1;
 				}
-			}a
+			}
 			
 			function disablePopupAbout(){
 				if(popupAboutStatus==1){
