@@ -1,5 +1,5 @@
 
-#popupMadLibs, #popupMurmur, #popupDage, #popupBlog {
+#popupMadLibs, #popupMurmur, #popupDage, #popupKoupler {
   height: 600px;
   width: 80%;
   overflow: auto;
@@ -21,12 +21,12 @@
   visibility: hidden;
   font-family: 'Avenir', 'sans-serif';
 }
-#popupMadLibs p, #popupMurmur p, #popupDage p, #popupBlog p {
+#popupMadLibs p, #popupMurmur p, #popupDage p, #popupKoupler p {
   padding-left: 10px;
   font-size: 16px;
   line-height: 24px;
 }
-#popupMadLibsClose, #popupMurmurClose, #popupDageClose, #popupBlogClose {
+#popupMadLibsClose, #popupMurmurClose, #popupDageClose, #popupKouplerClose {
   right: 0;
   top: 15px;
   position: absolute;
@@ -38,7 +38,7 @@
   -ms-transition:all .25s linear;
   transition:all .25s linear;
 }
-#popupMadLibsClose:hover, #popupMurmurClose:hover, #popupDageClose:hover, #popupBlogClose:hover {
+#popupMadLibsClose:hover, #popupMurmurClose:hover, #popupDageClose:hover, #popupKouplerClose:hover {
   opacity: 1;
   -webkit-transition:all .25s linear;
   -moz-transition:all .25s linear;
