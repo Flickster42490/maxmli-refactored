@@ -621,6 +621,7 @@ header ul li a:hover {
 .link a{
 	color: #ea6314;
 	font-weight: 600;
+	font-size: .6em;
 }
 #techstack {
 	width: 70%;
@@ -633,4 +634,7 @@ header ul li a:hover {
 	height: 100%;
 	width: 80%;
 	cursor: pointer;
+}
+hr{
+	border-bottom: .5px gray
 }

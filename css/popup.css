@@ -17,7 +17,7 @@
   -ms-border-radius: 10px;
   -khtml-border-radius: 10px;
   border-radius: 10px;
-  margin-top: -50px;
+  margin-top: 5%;
   visibility: hidden;
   font-family: 'Avenir', 'sans-serif';
 }
@@ -55,4 +55,20 @@ h5{
 }
 a{
   cursor: pointer;
+}
+#popupMadLibsClose {
+  margin-right: 1%;
+  position: absolute;
+}
+#popupDageClose{
+  margin-right: 1%;
+}
+#popupKouplerClose{
+  margin-right: 1%;
+}
+#popupMurmurClose{
+  margin-right: 1%;
+}
+#bar{
+  color: black;
 }

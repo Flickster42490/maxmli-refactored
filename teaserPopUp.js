@@ -23,7 +23,7 @@
         var popupMadLibsWidth = $("#popupMadLibs").width();
         $("#popupMadLibs").css({
           "position": "absolute",
-          "top": windowHeight/2.3-popupMadLibsHeight/2,
+          "top": windowHeight/1.75-popupMadLibsHeight/2,
           "left": windowWidth/2.08-popupMadLibsWidth/2
         });
       }
@@ -45,7 +45,7 @@
         $(".body").click(function(){
           disablePopupMadLibs();
         });
-        $(document).keyup(function(e){
+        $(document).keydown(function(e){
         if(e.keyCode === 27)
           disablePopupMadLibs();
         });
@@ -74,7 +74,7 @@
         var popupMurmurWidth = $("#popupMurmur").width();
         $("#popupMurmur").css({
           "position": "absolute",
-          "top": windowHeight/2.3-popupMurmurHeight/2,
+          "top": windowHeight/1.75-popupMurmurHeight/2,
           "left": windowWidth/2.08-popupMurmurWidth/2
         });
       }
@@ -94,9 +94,9 @@
         $(".body").click(function(){
           disablePopupMurmur();
         });
-        $(document).keyup(function(e){
+        $(document).keydown(function(e){
         if(e.keyCode === 27)
-          disablepopupMurmur();
+          disablePopupMurmur();
         });
 
 
@@ -124,7 +124,7 @@
         var popupDageWidth = $("#popupDage").width();
         $("#popupDage").css({
           "position": "absolute",
-          "top": windowHeight/2.3-popupDageHeight/2,
+          "top": windowHeight/1.75-popupDageHeight/2,
           "left": windowWidth/2.08-popupDageWidth/2
         });
       }
@@ -144,12 +144,12 @@
         $("#popupDageClose").click(function(){
           disablePopupDage();
         });
-        $(".body").click(function(){
+        $(".teaser-container").click(function(){
           disablePopupDage();
         });
-        $(document).keyup(function(e){
+        $(document).keydown(function(e){
         if(e.keyCode === 27)
-          disablepopupDage();
+          disablePopupDage();
         });
 /////////////////////////////////////////////////////////////
       var popupKouplerStatus = 0;
@@ -175,7 +175,7 @@
         var popupKouplerWidth = $("#popupKoupler").width();
         $("#popupKoupler").css({
           "position": "absolute",
-          "top": windowHeight/2.3-popupKouplerHeight/2,
+          "top": windowHeight/1.75-popupKouplerHeight/2,
           "left": windowWidth/2.08-popupKouplerWidth/2
         });
       }
@@ -200,6 +200,10 @@
           disablePopupKoupler();
         });
         $(".body").click(function(){
+          disablePopupKoupler();
+        });
+        $(document).keydown(function(e){
+        if(e.keyCode === 27)
           disablePopupKoupler();
         });
 });
