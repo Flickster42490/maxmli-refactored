@@ -503,9 +503,9 @@ header ul li a:hover {
 }
 
 .teaser_item {
-	width: calc(33.33% - 44px);
+	width: calc(50% - 44px);
 	margin: 0 44px 44px 0;
-	height: auto;
+	height: 188px;
 	float: left;
 	position: relative;
 }
@@ -597,14 +597,17 @@ header ul li a:hover {
 .title{
 	text-align:center;
 	font-size:40px;
-	color:#fff;
+	color:#000;
 	margin-top: 2%;
+	font-family: 'Helvetica', 'sans-serif';
 }
 .subtitle{
-	font-size:35px;
-	color:#fff;
-	margin-top:8%;
+	font-size:30px;
+	color:#000;
+	margin-top:7%;
 	text-align: center;
+	font-family: 'Avenir','sans-serif';
+	font-weight: 400;
 }
 .description{
 	width:80%;
@@ -614,4 +617,20 @@ header ul li a:hover {
 .popupImages{
 	width: 80%;
 	max-height: 350px;
+}
+.link a{
+	color: #ea6314;
+	font-weight: 600;
+}
+#techstack {
+	width: 70%;
+}
+#techstackmadlibs {
+	margin-left: 30%;
+}
+.teaserImage {
+	margin: auto;
+	height: 100%;
+	width: 80%;
+	cursor: pointer;
 }
