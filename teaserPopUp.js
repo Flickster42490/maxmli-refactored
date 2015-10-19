@@ -42,7 +42,7 @@
         $("#popupMadLibsClose").click(function(){
           disablePopupMadLibs();
         });
-        $(".body").click(function(){
+        $("div").mousedown(function(){
           disablePopupMadLibs();
         });
         $(document).keydown(function(e){
@@ -91,7 +91,7 @@
         $("#popupMurmurClose").click(function(){
           disablePopupMurmur();
         });
-        $(".body").click(function(){
+        $("div").mousedown(function(){
           disablePopupMurmur();
         });
         $(document).keydown(function(e){
@@ -144,7 +144,7 @@
         $("#popupDageClose").click(function(){
           disablePopupDage();
         });
-        $(".teaser-container").click(function(){
+        $("div").mousedown(function(){
           disablePopupDage();
         });
         $(document).keydown(function(e){
@@ -192,14 +192,10 @@
           loadPopupKoupler();
           $("#popupKoupler").mCustomScrollbar("vertical",400,"easeOutCirc",1.05,"auto","yes","yes",10); 
         });
-        $(document).keyup(function(e){
-        if(e.keyCode === 27)
-          disablepopupKoupler();
-        });
         $("#popupKouplerClose").click(function(){
           disablePopupKoupler();
         });
-        $(".body").click(function(){
+        $("div").mousedown(function(){
           disablePopupKoupler();
         });
         $(document).keydown(function(e){
