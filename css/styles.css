@@ -638,3 +638,6 @@ header ul li a:hover {
 hr{
 	border-bottom: .5px gray
 }
+video{
+	margin-top: 2%;
+}
