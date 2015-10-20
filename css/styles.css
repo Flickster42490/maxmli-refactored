@@ -216,8 +216,8 @@ header ul li a:hover {
 	margin: 0px auto 55px auto;
 	padding-top: 325px;
 	box-sizing: border-box;
-	font-size: 40px;
-	line-height: 1.10em;
+	font-size: 42px;
+	line-height: 1.50em;
 	letter-spacing: -1px;
 	font-family: 'Avenir';
 	text-align: left;
@@ -584,7 +584,7 @@ header ul li a:hover {
 	color:#ea6314;
 }
 .img-circle{
-	border-radius: 1%;
+	border-radius: 5%;
 	margin-top: -15%;
 	margin-bottom: 5%;
 	margin-left: 40%;
