@@ -42,7 +42,10 @@
         $("#popupMadLibsClose").click(function(){
           disablePopupMadLibs();
         });
-        $("div").mousedown(function(){
+        $("#work").mousedown(function(){
+          disablePopupMadLibs();
+        });
+        $('#about').mousedown(function(){
           disablePopupMadLibs();
         });
         $(document).keydown(function(e){
@@ -91,7 +94,10 @@
         $("#popupMurmurClose").click(function(){
           disablePopupMurmur();
         });
-        $("div").mousedown(function(){
+        $("#work").mousedown(function(){
+          disablePopupMurmur();
+        });
+        $("#about").mousedown(function(){
           disablePopupMurmur();
         });
         $(document).keydown(function(e){
@@ -144,7 +150,10 @@
         $("#popupDageClose").click(function(){
           disablePopupDage();
         });
-        $("div").mousedown(function(){
+        $("#about").mousedown(function(){
+          disablePopupDage();
+        });
+        $('#work').mousedown(function(){
           disablePopupDage();
         });
         $(document).keydown(function(e){
@@ -195,7 +204,10 @@
         $("#popupKouplerClose").click(function(){
           disablePopupKoupler();
         });
-        $("div").mousedown(function(){
+        $("#about").mousedown(function(){
+          disablePopupKoupler();
+        });
+        $("#work").mousedown(function(){
           disablePopupKoupler();
         });
         $(document).keydown(function(e){
