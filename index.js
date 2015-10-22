@@ -12,4 +12,8 @@ app.get('/jm', function(req,res){
   res.sendFile(path.join(__dirname+'/jamie/jamie.html'))
 })
 
+app.get('/resume', function(req,res){
+  res.sendFile(path.join(__dirname+'/images/resume.pdf'))
+})
+
 app.listen(process.env.PORT || 4000);
