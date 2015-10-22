@@ -575,10 +575,19 @@ header ul li a:hover {
 .font_color a {
 	color: rgb(255, 255, 255);
 }
-.nameTag a {
-	color:#ea6314;
-	font-size:22px;
-	font-weight: bold;
+@media(max-width:950px){
+	.nameTag a{
+		font-size:12px;
+		color:#ea6314;
+		font-weight: bold;
+	}
+}
+@media(min-width:960px){
+	.nameTag a {
+		color:#ea6314;
+		font-size:22px;
+		font-weight: bold;
+	}
 }
 .banner{
 	color:#ea6314;
@@ -644,8 +653,9 @@ video{
 .bannerText{
 	font-family: 'Avenir';
 	text-align: left;
-	padding-left: 1.5%;
+	padding-left: 2.5%;
 	color: #505050 ;
+	font-weight: 200;
 }
 #resume{
 	font-weight: 200;
