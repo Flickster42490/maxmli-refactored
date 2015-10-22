@@ -13,7 +13,7 @@ app.get('/jm', function(req,res){
 })
 
 app.get('/resume', function(req,res){
-  res.sendFile(path.join(__dirname+'/images/resume.pdf'))
+  res.sendFile(path.join(__dirname+'/resume.html'))
 })
 
 app.listen(process.env.PORT || 4000);
